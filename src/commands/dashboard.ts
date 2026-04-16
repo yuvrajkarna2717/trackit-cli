@@ -1,5 +1,4 @@
 import { Command } from "commander";
-import chalk from "chalk";
 import asciichart from "asciichart";
 import { readConfig } from "../services/config.service.js";
 import { getAllLogs } from "../services/log.service.js";

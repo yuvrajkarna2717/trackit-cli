@@ -1,5 +1,4 @@
 import path from "path";
-import os from "os";
 
 export const TRACKIT_DIR = ".trackit";
 export const CONFIG_FILE = "config.json";

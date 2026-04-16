@@ -1,6 +1,5 @@
 import { Command } from "commander";
 import inquirer from "inquirer";
-import chalk from "chalk";
 import fs from "fs-extra";
 import { getRemindersPath } from "../utils/paths.js";
 import { success, error, warn } from "../utils/helpers.js";

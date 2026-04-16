@@ -1,4 +1,3 @@
-import chalk from "chalk";
 import Table from "cli-table3";
 import type { Theme } from "./themes.js";
 

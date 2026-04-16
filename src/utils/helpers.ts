@@ -1,4 +1,3 @@
-import chalk from "chalk";
 import ora from "ora";
 import { getActiveTheme } from "../ui/theme.service.js";
 import { renderSuccess, renderError, renderWarn, renderInfo, renderHeading } from "../ui/renderer.js";
