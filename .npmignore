@@ -1,0 +1,21 @@
+# Source
+src/
+tsconfig.json
+tsup.config.ts
+
+# Dev/config
+.git/
+.gitignore
+.trackit/
+trackit-exports/
+screenshots/
+
+# Build artifacts
+node_modules/
+*.tgz
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo

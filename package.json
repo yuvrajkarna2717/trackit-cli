@@ -1,29 +1,64 @@
 {
   "name": "trackit-cli",
-  "version": "1.0.1",
-  "description": "A simple CLI to organize and track your tasks.",
-  "main": "index.js",
+  "version": "2.0.0",
+  "description": "🚀 A developer-friendly CLI to track daily progress, tasks, and productivity",
+  "type": "module",
+  "main": "dist/index.js",
   "bin": {
-    "trackIt": "./bin/trackIt.js"
+    "trackit": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
   },
   "scripts": {
-    "start": "node bin/trackIt.js"
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuvrajkarna2717/trackit-cli.git"
   },
   "keywords": [
-    "task-tracking",
-    "CLI",
-    "task-manager",
-    "nodejs"
+    "cli",
+    "tracker",
+    "productivity",
+    "daily-log",
+    "tasks",
+    "streak",
+    "developer-tools"
   ],
-  "author": "Yuvraj Karna",
-  "license": "Proprietary",
+  "author": "yuvrajkarna2717",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yuvrajkarna2717/trackit-cli/issues"
+  },
+  "homepage": "https://github.com/yuvrajkarna2717/trackit-cli#readme",
   "dependencies": {
-    "chalk": "^5.4.1",
+    "asciichart": "^1.5.25",
+    "chalk": "^5.6.2",
     "cli-table3": "^0.6.5",
-    "dotenv": "^16.4.7",
-    "fs-extra": "^11.3.0",
-    "json2csv": "^6.0.0-alpha.2",
-    "xlsx": "^0.18.5",
-    "yargs": "^17.7.2"
+    "commander": "^14.0.3",
+    "dayjs": "^1.11.20",
+    "fs-extra": "^11.3.4",
+    "inquirer": "^13.4.1",
+    "node-schedule": "^2.1.1",
+    "ora": "^9.3.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/asciichart": "^1.5.8",
+    "@types/fs-extra": "^11.0.4",
+    "@types/inquirer": "^9.0.9",
+    "@types/node": "^25.6.0",
+    "@types/node-schedule": "^2.1.8",
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.2"
   }
 }
